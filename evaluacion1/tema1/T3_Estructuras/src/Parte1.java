@@ -77,6 +77,8 @@ public class Parte1 {
             System.out.println("Has sacado un sobresaliente");
         }else if (nota == 10){
             System.out.println("Has sacado matrícula de honor");
+        }else {
+            System.out.println("Escribe la nota adecuadamente");
         }
 
     }
