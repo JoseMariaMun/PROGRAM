@@ -73,9 +73,14 @@ public class EjercicioFOR {
         System.out.println("Introduzca el rango máximo");
         int rmaximo= lecturaTeclado.nextInt();
         int numeroNumeros=rmaximo-rminimo;
+        int sumatorioAleatorio=0;
+        int repeticiones = (int)(Math.random()*16)+5;
+        double media= 0.0;
         if (rminimo<rmaximo) {
-            for (int i = rminimo; i <= rmaximo; i++) {
-                System.out.println((int)(Math.random() * (numeroNumeros+1) + rminimo));
+            for (int i = 0; i < repeticiones ; i++) {
+                int aleatorio= (int)(Math.random()*(numeroNumeros+1)+rminimo);
+                sumatorioAleatorio +=aleatorio;
+                double mediaAleatorio= (double) sumatorioAleatorio/repeticiones;
             }
         }else
             System.out.println("El orden de los números es erróneo");
